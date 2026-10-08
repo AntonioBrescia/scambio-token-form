@@ -1,7 +1,7 @@
 <?php
 // Funzioni comuni del flusso "scambio token".
 // Nessun database: il token vive solo nella sessione PHP, che a fine flusso viene distrutta.
-
+date_default_timezone_set('Europe/Rome');
 function app_session_start()
 {
     if (session_status() === PHP_SESSION_NONE) {
